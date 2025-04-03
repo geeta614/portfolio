@@ -47,30 +47,7 @@
       margin-top: 0;
     }
 }
-
-@media (max-width: 768px) {
-    /* Adjustments for tablets and below */
-    .nav-links {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #profile {
-        flex-direction: column;
-    }
-
-    /* Add other necessary adjustments */
-}
-
-@media (max-width: 480px) {
-    /* Adjustments for mobile devices */
-    .details-container {
-        flex: 1 1 100%;
-    }
-
-    /* Add other necessary adjustments */
-}
-
+  
 @media screen and (max-width: 600px) {
     #contact,
     footer {
