@@ -298,6 +298,24 @@ section {
   margin: auto 0;
 }
 
+/* PROJECT SECTION */
+
+#project {
+  position: relative;
+}
+
+/* EXPERIENCE SECTION */
+
+#experience {
+  position: relative;
+}
+
+/* POSITIONS SECTION */
+
+#positions {
+  position: relative;
+}
+
 /* TECH STACKS SECTION */
 
 #tech-stack {
@@ -335,6 +353,18 @@ article {
 
 article .icon {
   cursor: default;
+}
+
+/* ACHIEVEMENTS SECTION */
+
+#achievements {
+  position: relative;
+}
+
+/* CERTIFICATIONS SECTION */
+
+#certifications {
+  position: relative;
 }
 
 /* CONTACT */
@@ -386,4 +416,14 @@ footer {
 
 footer p {
   text-align: center;
+}
+
+#about,
+#certifications,
+#achievements,
+#contact,
+#positions,
+#experience,
+#project {
+  height: auto;
 }
