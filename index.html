@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,17 +8,20 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaqueries.css">
 </head>
+
 <body>
     <nav id="desktop-nav">
         <div class="logo">Geeta Garg</div>
         <div>
             <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#tech-stack">Tech Stacks</a></li>
-                <li><a href="#contact">Contact</a></li>
+              <li><a href="#project">Projects</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#tech-stack">Technical Skills</a></li>
+              <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </nav>
+
     <nav id="hamburger-nav">
         <div class="logo">Geeta Garg</div>
         <div class="hamburger-menu">
@@ -27,12 +31,14 @@
                 <span></span>
             </div>
             <div class="menu-links">
-                <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="#tech-stack" onclick="toggleMenu()">Tech Stacks</a></li>
-                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+              <li><a href="#project" onclick="toggleMenu()">Projects</a></li>
+              <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+              <li><a href="#tech-stack" onclick="toggleMenu()">Technical Skills</a></li>
+              <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
             </div>
         </div>
     </nav>
+
     <section id="profile">
         <div class="section__pic-container">
             <img 
@@ -46,7 +52,7 @@
             <p class="section__text__p2">Frontend Developer</p>
             <div class="btn-container">
                 <button class="btn btn-color-2" onclick="window.open('./assets/Resume.pdf')">
-                    Download CV
+                    Download Resume
                 </button>
                 <button class="btn btn-color-1" onclick="location.href='./#contact'">
                     Contact Info
@@ -74,39 +80,13 @@
             </div>
         </div>
     </section>
+
     <section id="about">
-        <p class="section__text__p1">Get to Know More</p>
-        <h1 class="title">About Me</h1>
+        <p class="section__text__p1">Get to Know More About Me</p>
+        <h1 class="title">Education</h1>
         <div class="section-container">
             <div class="about-details-container">
                 <div class="about-containers">
-                    <div class="details-container">
-                        <img 
-                            src="./assets/experience.png" 
-                            alt="Experience icon"
-                            class="icon"
-                        >
-                        <h3>Team Lead, Resource Management</h3>
-                        <p>IGDTUW Resources
-                            <br>
-                            August 2023-May 2024
-                        </p>
-                    </div>
-                    <div class="details-container">  
-                        <img 
-                            src="./assets/experience.png" 
-                            alt="Experience icon"
-                            class="icon"
-                        >
-                        <h3>Research Intern</h3>
-                        <p>IGDTUW
-                            <br>
-                            Concept of Transfer Learning was implemented and GoogleNet ranked top with an accuracy of 89.28%.
-                            Research Paper accepted in ICDPN Conference.
-                            <br>
-                            May 2023-July 2023
-                        </p>
-                    </div>
                     <div class="details-container">
                         <img 
                             src="./assets/education.png" 
@@ -115,8 +95,8 @@
                         >
                         <h3>Indira Gandhi Delhi Technical University for Women, Delhi</h3>
                         <p>B.Tech. in Computer Science and Engineering in Artificial Intelligence
-                            <br>CGPA-8.41
-                            <br>August 2022-May 2026
+                            <br>CGPA-8.56
+                            <br>2022-2026
                         </p>
                     </div>
                     <div class="details-container">
@@ -128,7 +108,7 @@
                         <h3> Government co-ed Senior Secondary School, Dwarka, Delhi</h3>
                         <p> CBSE- XII (PCM)
                             <br>Percentage-85.2%
-                            <br>April 2020-March 2021
+                            <br>2020-2021
                         </p>
                     </div>
                     <div class="details-container">
@@ -140,19 +120,85 @@
                         <h3> Government co-ed Senior Secondary School, Bindapur, Delhi</h3>
                         <p> CBSE- X
                             <br>Percentage-93.2%
-                            <br>April 2018- March 2019
+                            <br>2018-2019
                         </p>
                     </div>
                 </div>
                 <div class="text-container">
-                    <p>
-                        I am a pre-final year B.Tech student in Computer Science
-                         and Engineering (AI) at IGDTUW, Delhi. With experience 
-                         in AI research, I am passionate about solving real-world 
-                         problems using technology. Proficient in C++, DBMS (SQL), 
-                         OOPS and Python, I aim to contribute to impactful projects 
-                         in AI and software development.
-                    </p>
+                  <p>
+                    I’m a B.Tech Computer Science (AI) student at IGDTUW 
+                    (2022–2026), passionate about software development, 
+                    AI research, and problem-solving. As a research intern 
+                    and placement coordinator, I enjoy building real-world 
+                    projects and leading technical communities. I’ve solved 
+                    200+ DSA problems on LeetCode and built web apps like a 
+                    resume builder and portfolio site.
+                  </p>
+                </div>
+            </div>
+        </div>
+        <img 
+            src="./assets/arrow.png" 
+            alt="Arrow icon" 
+            class="icon arrow"
+            onclick="location.href='./#project'"
+        >
+    </section>
+
+    <section id="project">
+        <h1 class="title">Projects</h1>
+        <div class="section-container">
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img 
+                            src="./assets/checkmark.png" 
+                            alt="Project Icon"
+                            class="icon"
+                        >
+                        <h3>Resume Builder, May 2025</h3>
+                        <p>
+                           • Developed a fully responsive resume builder web app 
+                            that converts user form input into a professional, 
+                            ATS-friendly PDF resume.
+                            <br>
+                           • Implemented dynamic rendering and validation logic to 
+                            provide real-time resume preview and support error-free 
+                            PDF generation.
+                            <br>
+                           • Deployed the project using Netlify and integrated GitHub 
+                           for version control and collaboration.
+                           <br>
+                           • Designed and deployed a personal portfolio showcasing 
+                           projects and skills with a responsive UI.
+                           <br> 
+                           • Tech Stack: HTML, CSS, JavaScript, and html2pdf.js
+                           <br>
+                           • <a href="https://github.com/geeta614/resume-builder" target="_blank">GitHub</a>
+                           <br>
+                           • <a href="https://form2resume.netlify.app/" target="_blank">Live</a>
+                        </p>
+                    </div>
+                    <div class="details-container">
+                        <img 
+                            src="./assets/checkmark.png" 
+                            alt="Project Icon"
+                            class="icon"
+                        >
+                        <h3>Portfolio Website, January 2025</h3>
+                        <p> 
+                           • Designed and deployed a personal portfolio showcasing 
+                           projects and skills with a responsive UI.
+                           <br>
+                           • Hosted on Netlify for improved accessibility and performance.
+                           <br>
+                           • Tech Stack: HTML, CSS, JavaScript
+                           <br>
+                           • <a href="https://github.com/geeta614/portfolio" target="_blank">GitHub</a>
+                           <br>
+                           • <a href="https://geeta-garg-portfolio.netlify.app/" target="_blank">Live</a>
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -163,9 +209,93 @@
             onclick="location.href='./#experience'"
         >
     </section>
+
+    <section id="experience">
+        <h1 class="title">Experience</h1>
+        <div class="section-container">
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img 
+                            src="./assets/experience.png" 
+                            alt="Experience Icon"
+                            class="icon"
+                        >
+                        <h3>Research Intern, IGDTUW, May 2023- July 2023</h3>
+                        <p>
+                           • Contributed to the literature review and paper writing 
+                           for a study on Glaucoma Detection using Transfer Learning 
+                           with EyePACS and AIROGS-Light datasets.
+                            <br>
+                           • Models evaluated by the team included GoogleNet (89.28% 
+                           accuracy), ResNet50 (86.16%), VGG16, and AlexNet (44.64%).
+                            <br>
+                           • Published research in the <b>ICDPN Conference.</b>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img 
+            src="./assets/arrow.png" 
+            alt="Arrow icon" 
+            class="icon arrow"
+            onclick="location.href='./#positions'"
+        >
+    </section>
+
+    <section id="positions">
+        <h1 class="title">Positions of Responsibility</h1>
+        <div class="section-container">
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img 
+                            src="./assets/education.png" 
+                            alt="Experience Icon"
+                            class="icon"
+                        >
+                        <h3> Training and Placement Coordinator, IGDTUW, August 2023- Present</h3>
+                        <p>
+                           • Managing university placement drives and internship 
+                           facilitation for 1000+ students.
+                            <br>
+                           • Ensuring smooth execution of recruitment events and 
+                           maintaining comprehensive placement records.
+                            <br>
+                           • Creating small Excel databases from a master database 
+                           under strict deadlines to streamline opportunities.
+                        </p>
+                    </div>
+                    <div class="details-container">
+                        <img 
+                            src="./assets/education.png" 
+                            alt="Experience Icon"
+                            class="icon"
+                        >
+                        <h3> Team Lead, Resource Management, IGDTUW Resources, August 2023- July 2024</h3>
+                        <p>
+                           • Organized events, promotions, and 
+                           resource sharing for a 500+ member community.
+                            <br>
+                           • Led the collection and curation of study 
+                           materials for various subjects.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img 
+            src="./assets/arrow.png" 
+            alt="Arrow icon" 
+            class="icon arrow"
+            onclick="location.href='./#tech-stack'"
+        >
+    </section>
+
     <section id="tech-stack">
         <p class="section__text__p1">Explore My</p>
-        <h1 class="title">Tech Stacks</h1>
+        <h1 class="title">Technical Skills</h1>
         <div class="experience-details-container">
           <div class="about-containers">
             <div class="details-container">
@@ -188,7 +318,7 @@
                     class="icon"
                   />
                   <div>
-                    <h3>Structured Query Language (SQL)</h3>
+                    <h3>SQL</h3>
                   </div>
                 </article>
                 <article>
@@ -198,7 +328,7 @@
                     class="icon"
                   />
                   <div>
-                    <h3>HyperText Markup Language (HTML)</h3>
+                    <h3>HTML</h3>
                   </div>
                 </article>
                 <article>
@@ -208,7 +338,7 @@
                     class="icon"
                   />
                   <div>
-                    <h3>Cascading Style Sheets (CSS)</h3>
+                    <h3>CSS</h3>
                   </div>
                 </article>
                 <article>
@@ -219,16 +349,6 @@
                   />
                   <div>
                     <h3>JavaScript</h3>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>Java</h3>
                   </div>
                 </article>
                 <article>
@@ -253,7 +373,7 @@
                       class="icon"
                     />
                     <div>
-                      <h3>Data Structures and Algorithms</h3>
+                      <h3>DSA</h3>
                     </div>
                   </article>
                   <article>
@@ -263,7 +383,7 @@
                       class="icon"
                     />
                     <div>
-                      <h3>Object-Oriented Programming</h3>
+                      <h3>OOPs</h3>
                     </div>
                   </article>
                   <article>
@@ -273,7 +393,7 @@
                       class="icon"
                     />
                     <div>
-                      <h3>Database Management Systems</h3>
+                      <h3>DBMS</h3>
                     </div>
                   </article>
                   <article>
@@ -283,7 +403,7 @@
                       class="icon"
                     />
                     <div>
-                      <h3>Operating Systems</h3>
+                      <h3>OS</h3>
                     </div>
                   </article>
                   <article>
@@ -293,7 +413,7 @@
                       class="icon"
                     />
                     <div>
-                      <h3>Computer Networks</h3>
+                      <h3>CN</h3>
                     </div>
                   </article>
                   <article>
@@ -303,7 +423,7 @@
                       class="icon"
                     />
                     <div>
-                      <h3>Machine Learning</h3>
+                      <h3>ML</h3>
                     </div>
                   </article>
                   <article>
@@ -313,8 +433,43 @@
                         class="icon"
                       />
                       <div>
-                        <h3>Deep Learning</h3>
+                        <h3>DL</h3>
                       </div>
+                  </article>
+                </div>
+              </div>
+            <div class="details-container">
+                <h2 class="experience-sub-title">Developer Tools</h2>
+                <div class="article-container">
+                  <article>
+                    <img
+                      src="./assets/checkmark.png"
+                      alt="Experience icon"
+                      class="icon"
+                    />
+                    <div>
+                      <h3>VS Code</h3>
+                    </div>
+                  </article>
+                  <article>
+                    <img
+                      src="./assets/checkmark.png"
+                      alt="Experience icon"
+                      class="icon"
+                    />
+                    <div>
+                      <h3>GitHub</h3>
+                    </div>
+                  </article>
+                  <article>
+                    <img
+                      src="./assets/checkmark.png"
+                      alt="Experience icon"
+                      class="icon"
+                    />
+                    <div>
+                      <h3>Google Colab</h3>
+                    </div>
                   </article>
                 </div>
               </div>
@@ -363,63 +518,62 @@
                 </article>
               </div>
             </div>
-            <div class="details-container">
-                <h2 class="experience-sub-title">Tools</h2>
-                <div class="article-container">
-                  <article>
-                    <img
-                      src="./assets/checkmark.png"
-                      alt="Experience icon"
-                      class="icon"
-                    />
-                    <div>
-                      <h3>Visual Studio Code</h3>
-                    </div>
-                  </article>
-                  <article>
-                    <img
-                      src="./assets/checkmark.png"
-                      alt="Experience icon"
-                      class="icon"
-                    />
-                    <div>
-                      <h3>Google Colab</h3>
-                    </div>
-                  </article>
-                  <article>
-                    <img
-                      src="./assets/checkmark.png"
-                      alt="Experience icon"
-                      class="icon"
-                    />
-                    <div>
-                      <h3>GitHub</h3>
-                    </div>
-                  </article>
-                  <article>
-                    <img
-                      src="./assets/checkmark.png"
-                      alt="Experience icon"
-                      class="icon"
-                    />
-                    <div>
-                      <h3>Jupyter</h3>
-                    </div>
-                  </article>
-                </div>
-              </div>
           </div>
         </div>
         <img
           src="./assets/arrow.png"
           alt="Arrow icon"
           class="icon arrow"
-          onclick="location.href='./#projects'"
+          onclick="location.href='./#achievements'"
         />
       </section>
+
+      <section id="achievements">
+        <h1 class="title">Achievements</h1>
+        <div class="details-container">
+          <p>
+           • Solved 200+ DSA problems on LeetCode including 100+ 
+           Medium and 20+ Hard, with a 50-day streak.
+           <br>
+           • Selected for PwC Technology & Transformation 
+           Launchpad Program 3.0.
+           <br>
+           • Leading a 700+ member Telegram community 
+           for sharing semester and technical resources.
+           <br>
+           • Scored 100% in Class X Mathematics.
+           </p>
+        </div>
+        <img
+          src="./assets/arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#certifications'"
+        />
+      </section>
+
+    <section id="certifications">
+        <h1 class="title">Certifications</h1>
+        <div class="details-container">
+          <p>
+           • Full-Stack Web Development– Internshala
+           <br>
+           • Developing Soft Skills and Personality– NPTEL (Secured 80%)
+           <br>
+           • Data Structures and Algorithms– Coding Ninjas
+           </p>
+        </div>
+        <img
+          src="./assets/arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#contact'"
+        />
+      </section>
+
     <section id="contact">
-        <p class="section__text__p1">Get in Touch</p>
-        <h1 class="title">Contact Me</h1>
+        <p class="section__text__p1">Get in Touch With Me</p>
+        <h1 class="title">Contact</h1>
         <div class="contact-info-upper-container">
           <div class="contact-info-container">
             <img
@@ -439,13 +593,14 @@
           </div>
         </div>
       </section>
+
     <footer>
         <nav>
           <div class="nav-links-container">
             <ul class="nav-links">
-              <li><a href="#about">About</a></li>
-              <li><a href="#tech-stack">Tech Stacks</a></li>
-              <li><a href="#contact">Contact</a></li>
+              <li><a href="#project">Projects</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#tech-stack">Technical Skills</a></li>
             </ul>
           </div>
         </nav>
