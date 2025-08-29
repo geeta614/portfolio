@@ -26,4 +26,4 @@ This is a responsive personal portfolio website built using **HTML, CSS, and Jav
 3. Open `index.html` in your browser to view the portfolio.
 
 ## Live Demo
-You can check out the live demo [https://geeta-garg-portfolio.netlify.app/](#) 
+You can check out the live demo <a href="https://geeta-garg-portfolio.netlify.app/" target="_blank">here</a>.
